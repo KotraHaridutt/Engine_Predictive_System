@@ -71,7 +71,7 @@ def create_rolling_features(df, sensors, window_size=5):
     df_out = df_out.fillna(0)
     return df_out
 
-def get_recommendation(rul, rmse=49):
+def get_recommendation(rul, rmse=47):
     """Returns a status, recommendation, and color based on the predicted RUL."""
     red_threshold = 10 + rmse # ~59 cycles
     yellow_threshold = 100
